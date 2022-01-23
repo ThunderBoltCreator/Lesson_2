@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<nav>
+			<ul>
+				<li>
+					<a href="">
+						HOME
+					</a>
+				</li>
+				<li>
+					<a href="">
+						HTML
+					</a>
+				</li>
+				<li>
+					<a href="">
+						CSS
+					</a>
+				</li>
+				<li>
+					<a href="">
+						JAVASCRIPT
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div>
+			<h1>HTML Путь к файлу</h1>
+			<a href="#"><- Назад </a>
+			<a href="#">Вперед -></a>
+			<p>Путь к файлу описывает расположение файла в структуре папок веб сайта.</p>
+			<div>
+				<h2>Примеры пути к файлам</h2>
+				<div>
+					<span>Путь</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Описание</span><br>
+					<span>img
+						src="picture.jpg"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>picture.jpg
+						находится в той же папке, что и текущая страница</span><br>
+					<span>img src="images/picture.jpg"</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>picture.jpg находится в
+						папке images в текущей папке</span><br>
+					<span>img src="/images/picture.jpg"</span>&nbsp;&nbsp;&nbsp;<span>picture.jpg находится в папке
+						images в корне текущего веб-сайта</span><br>
+					<span>img
+						src="../picture.jpg"</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>picture.jpg
+						находится в папке на один уровень выше текущей папки</span><br>
+				</div>
+			</div>
+			<div>
+				<h2>Пути к HTML файлам</h2>
+				<p>Путь к файлу описывает расположение файла в структуре папок вебсайта.</p>
+				<p>Пути к файлам используются при связывании с внешними файлами, например:</p>
+				<ul>
+					<li>Веб-страницы</li>
+					<li>Изображения</li>
+					<li>Таблицы стилей</li>
+					<li>JavaScripts</li>
+				</ul>
+			</div>
+			<div>
+				<h2>Абсолютные пути к файлам</h2>
+				<p>Абсолютный путь к файлу - это полный URL адрес файла:</p>
+				<h4>Пример</h4>
+				<div>
+					<p>&lt;img src="http://schoolsw3.com/images/picture.jpg" alt="Горы"&gt;</p>
+					<a href="#">Редактор кода -></a>
+				</div>
+			</div>
+			<p>Теги &lt;img&gt; и атрибуты src и alt описаны в главе HTML Изображения.</p>
+			<div>
+				<h2>Относительные пути к файлам</h2>
+				<p>Относительный путь к файлу указывает на файл относительно текущей страницы.</p>
+				<div>
+					<p>В этом примере путь к файлу указывает на файл в папке images, расположенной в корне текущего веб-сайта:</p>
+					<h4>Пример</h4>
+					<p>&lt;img src="/images/picture.jpg" alt="Горы"&gt;</p>
+					<a href="#">Редактор кода -></a>
+				</div>
+				<div>
+					<p>В этом примере путь к файлу указывает на файл в папке images находятся в текущей папке:</p>
+					<h4>Пример</h4>
+					<p>&lt;img src="images/picture.jpg" alt="Горы"&gt;</p>
+					<a href="#">Редактор кода -></a>
+				</div>
+				<div>
+					<p>В этом примере путь к файлу указывает на файл в папке images находятся в папке на один уровень выше текущей папки:</p>
+					<h4>Пример</h4>
+					<p>&lt;img src="../images/picture.jpg" alt="Горы"&gt;</p>
+					<a href="#">Редактор кода -></a>
+				</div>
+			</div>
+			<div>
+				<h2>Практика лучше всего</h2>
+				<p>Рекомендуется использовать относительные пути к файлам (если возможно).</p>
+				<p>При использовании относительных путей к файлам, веб-страницы не будут привязаны к вашему текущему базовому URL-адрес. Все ссылки будут работать на вашем собственном компьютере (localhost), а также на вашем текущем общественном домене и вашем будущем публичном домене. </p>
+			</div>
+			<a href="#">< Назад</a>
+			<a href="#">Вперед ></a>
+		</div>
+		<p>Картинок там не было, так что держите котика)</p>
+		<img src="./img/cat.jpg" alt="Котик">
+	</main>
+	<footer>
+		<ul>
+			<li><a href="#">Сообщить ошибку</a></li>
+			<li><a href="#">Печать страницы</a></li>
+			<li><a href="#">Форум</a></li>
+			<li><a href="#">О нас</a></li>
+		</ul>
+	</footer>
+</body>
+
+</html>
